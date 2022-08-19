@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(to bottom, #2d91c2 0%, #0d1b69 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#conteudo {
+  background-color: #d5dcef;
+
+  border: 2px solid #1958a7;
+  border-radius: 10px;
+  padding: 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#conteudo h1 {
+  color: #0d67a3;
+  margin-bottom: 30px;
+
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
+}
+
+#conteudo form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#conteudo label {
+  padding: 0 5px;
+
+  color: #1b2966;
+  font-weight: bold;
+}
+
+#conteudo input {
+  background-color: #d5dcef;
+
+  border: none;
+  border-bottom: 2px solid #65667b;
+  border-radius: 3px;
+
+  color: #1b2966;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+
+  padding: 3px 0;
+}
+
+#conteudo input:focus {
+  outline: none;
+}
+
+#conteudo ::placeholder {
+  color: #5761af;
+}
+
+#conteudo p {
+  margin-top: 40px;
+
+  font-size: 100px;
+  color: #3e5291;
+
+  text-align: center;
+}
+
+#conteudo button {
+  align-items: center;
+  appearance: none;
+  background-color: #3eb2fd;
+  background-image: linear-gradient(1deg, #4f58fd, #149bf3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, background-position 0.2s;
+
+  margin-top: 15px;
+}
+
+#conteudo button:active,
+#conteudo button:focus {
+  outline: none;
+}
+
+#conteudo button:hover {
+  background-position: -20px -20px;
+}
+
+#conteudo button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 0.125em;
+}
